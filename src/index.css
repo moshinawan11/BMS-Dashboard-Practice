@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Inter", "sans-serif";
+  --font-poppins: "Poppins", "sans-serif";
+  --text-h5-md: 1.5rem;
+  --text-h5-md--font-weight: 600;
+  --text-h5-md--line-height: 2rem;
+  --text-lg-md: 1.125rem;
+  --text-lg-md--font-weight: 600;
+  --text-lg-md--line-height: 1.75rem;
+  --text-rg-rg: 1rem;
+  --text-rg-rg--font-weight: 500;
+  --text-rg-lt: 1rem;
+  --text-rg-lt--font-weight: 400;
+  --text-rg-md: 1rem;
+  --text-rg-md--font-weight: 600;
+  --text-sm-lt: 0.875rem;
+  --text-sm-lt--font-weight: 400;
+  --text-sm-md: 0.875rem;
+  --text-sm-md--font-weight: 600;
+  --text-sm-bd: 0.875rem;
+  --text-sm-bd--font-weight: 700;
+  --text-xs-md: 0.75rem;
+  --text-xs-md--font-weight: 600;
+  --color-primary-500: #0D99FF;
+  --color-primary-600: #0C8BE8;
+  --color-wf-100: #F7F9FC;
+  --color-wf-200: #EDF0F7;
+  --color-wf-300: #E2E7F0;
+  --color-wf-400: #CBD2E0;
+  --color-wf-600: #717D96;
+  --color-wf-700: #4A5468;
+  --color-wf-800: #2D3648;
+  --color-typography-200: #8D93A3;
+  --color-typography-300: #596279;
+  --color-typography-500: #071437;
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* old IE & Edge */
+    scrollbar-width: none;     /* Firefox */
+  }
+}
+
+
+body {
+  font-family: var(--font-display);
+}
